@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Thu Sep  4 11:06:15 2025
+# Process ID: 8370
+# Log file: /home/ise/Xilinx_project/blink_led/planAhead_run_1/planAhead.log
+# Journal file: /home/ise/Xilinx_project/blink_led/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /home/ise/Xilinx_project/blink_led/pa.fromNetlist.tcl
+startgroup
+set_property package_pin T8 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin P4 [get_ports {led[0]}]
+endgroup
+startgroup
+set_property package_pin N5 [get_ports {led[1]}]
+endgroup
+startgroup
+set_property package_pin P5 [get_ports {led[2]}]
+endgroup
+startgroup
+set_property package_pin M6 [get_ports {led[3]}]
+endgroup
+startgroup
+set_property package_pin C7 [get_ports dclk1]
+endgroup
+save_constraints
