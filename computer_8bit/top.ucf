@@ -1,0 +1,30 @@
+
+# anh xa chan AX309
+NET "clk_50mhz" LOC = T8;
+NET "reset_btn" LOC = L3;
+
+#7_segment
+NET "seg[0]" LOC = C7;
+NET "seg[1]" LOC = E6;
+NET "seg[2]" LOC = C5;
+NET "seg[3]" LOC = F7;
+NET "seg[4]" LOC = D6;
+NET "seg[5]" LOC = E7;
+NET "seg[6]" LOC = D5;
+NET "seg[7]" LOC = C6;
+
+#led sel
+NET "digit[0]" LOC = D8;
+NET "digit[1]" LOC = E8;
+NET "digit[2]" LOC = F9;
+NET "digit[3]" LOC = F10;
+
+#led pin
+NET "led[0]" LOC = P4;
+NET "led[1]" LOC = N5;
+NET "led[2]" LOC = P5;
+NET "led[3]" LOC = M6;
+
+
+
+NET "clk_50mhz" IOSTANDARD = LVCMOS25;

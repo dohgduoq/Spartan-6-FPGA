@@ -1,0 +1,2 @@
+verilog work "cpu_8bit.v"
+verilog work "top.v"

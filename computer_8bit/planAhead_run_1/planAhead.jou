@@ -1,0 +1,67 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Sun Oct  5 07:40:01 2025
+# Process ID: 3278
+# Log file: /home/ise/Xilinx_project/computer_8bit/planAhead_run_1/planAhead.log
+# Journal file: /home/ise/Xilinx_project/computer_8bit/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /home/ise/Xilinx_project/computer_8bit/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin T8 [get_ports clk_50mhz]
+endgroup
+startgroup
+set_property package_pin L3 [get_ports reset_btn]
+endgroup
+startgroup
+set_property package_pin C7 [get_ports {seg[0]}]
+endgroup
+startgroup
+set_property package_pin E6 [get_ports {seg[1]}]
+endgroup
+startgroup
+set_property package_pin C5 [get_ports {seg[2]}]
+endgroup
+startgroup
+set_property package_pin F7 [get_ports {seg[3]}]
+endgroup
+startgroup
+set_property package_pin D6 [get_ports {seg[4]}]
+endgroup
+startgroup
+set_property package_pin E7 [get_ports {seg[5]}]
+endgroup
+set_property package_pin "" [get_ports [list  {seg[7]}]]
+startgroup
+set_property package_pin D5 [get_ports {seg[6]}]
+endgroup
+startgroup
+set_property package_pin C6 [get_ports {seg[7]}]
+endgroup
+startgroup
+set_property package_pin D8 [get_ports {digit[3]}]
+endgroup
+startgroup
+set_property package_pin E8 [get_ports {digit[2]}]
+endgroup
+startgroup
+set_property package_pin F9 [get_ports {digit[1]}]
+endgroup
+set_property package_pin "" [get_ports [list  {digit[3]}]]
+set_property package_pin "" [get_ports [list  {digit[2]}]]
+set_property package_pin "" [get_ports [list  {digit[1]}]]
+startgroup
+set_property package_pin D8 [get_ports {digit[0]}]
+endgroup
+startgroup
+set_property package_pin E8 [get_ports {digit[1]}]
+endgroup
+startgroup
+set_property package_pin F9 [get_ports {digit[2]}]
+endgroup
+startgroup
+set_property package_pin F10 [get_ports {digit[3]}]
+endgroup
+save_constraints

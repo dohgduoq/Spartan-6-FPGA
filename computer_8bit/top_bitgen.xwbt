@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/ise/project/computer_8bit/top.ncd
+OUTFILE=/home/ise/project/computer_8bit/top.bit
+FAMILY=Spartan6
+PART=xc6slx9-3ftg256
+WORKINGDIR=/home/ise/project/computer_8bit
+LICENSE=WebPack
+USER_INFO=213535292_0_0_036

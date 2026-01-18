@@ -1,0 +1,25 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Dec 04 09:22:35 2025
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "led<0>" LOCATE = SITE "P4" LEVEL 1;
+COMP "led<1>" LOCATE = SITE "N5" LEVEL 1;
+COMP "led<2>" LOCATE = SITE "P5" LEVEL 1;
+COMP "led<3>" LOCATE = SITE "M6" LEVEL 1;
+COMP "clk_50mhz" LOCATE = SITE "T8" LEVEL 1;
+COMP "seg<0>" LOCATE = SITE "C7" LEVEL 1;
+COMP "seg<1>" LOCATE = SITE "E6" LEVEL 1;
+COMP "seg<2>" LOCATE = SITE "C5" LEVEL 1;
+COMP "seg<3>" LOCATE = SITE "F7" LEVEL 1;
+COMP "seg<4>" LOCATE = SITE "D6" LEVEL 1;
+COMP "seg<5>" LOCATE = SITE "E7" LEVEL 1;
+COMP "seg<6>" LOCATE = SITE "D5" LEVEL 1;
+COMP "digit<0>" LOCATE = SITE "D8" LEVEL 1;
+COMP "seg<7>" LOCATE = SITE "C6" LEVEL 1;
+COMP "digit<1>" LOCATE = SITE "E8" LEVEL 1;
+COMP "digit<2>" LOCATE = SITE "F9" LEVEL 1;
+COMP "digit<3>" LOCATE = SITE "F10" LEVEL 1;
+COMP "reset_btn" LOCATE = SITE "L3" LEVEL 1;
+SCHEMATIC END;
+

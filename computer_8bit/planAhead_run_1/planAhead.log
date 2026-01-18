@@ -1,0 +1,115 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Sun Oct  5 07:40:01 2025
+# Process ID: 3278
+# Log file: /home/ise/Xilinx_project/computer_8bit/planAhead_run_1/planAhead.log
+# Journal file: /home/ise/Xilinx_project/computer_8bit/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Common 17-86] Your PlanAhead license expires in -3080 day(s)
+INFO: [Device 21-36] Loading parts and site information from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source /home/ise/Xilinx_project/computer_8bit/pa.fromHdl.tcl
+# create_project -name computer_8bit -dir "/home/ise/Xilinx_project/computer_8bit/planAhead_run_1" -part xc6slx9ftg256-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "top.ucf" [current_fileset -constrset]
+Adding file '/home/ise/Xilinx_project/computer_8bit/top.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {cpu_8bit.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {top.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top top $srcset
+# add_files [list {top.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx9ftg256-3
+Using Verific elaboration
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "/home/ise/Xilinx_project/computer_8bit/cpu_8bit.v" into library work
+Analyzing Verilog file "/home/ise/Xilinx_project/computer_8bit/top.v" into library work
+Loading clock regions from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
+Loading clock buffers from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
+Loading package pin functions from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx9/ftg256/Package.xml
+Loading io standards from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [/home/ise/Xilinx_project/computer_8bit/top.ucf]
+Finished Parsing UCF File [/home/ise/Xilinx_project/computer_8bit/top.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: a4cfec2a
+open_rtl_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2794.230 ; gain = 147.344
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin T8 [get_ports clk_50mhz]
+endgroup
+startgroup
+set_property package_pin L3 [get_ports reset_btn]
+endgroup
+startgroup
+set_property package_pin C7 [get_ports {seg[0]}]
+endgroup
+startgroup
+set_property package_pin E6 [get_ports {seg[1]}]
+endgroup
+startgroup
+set_property package_pin C5 [get_ports {seg[2]}]
+endgroup
+startgroup
+set_property package_pin F7 [get_ports {seg[3]}]
+endgroup
+startgroup
+set_property package_pin D6 [get_ports {seg[4]}]
+endgroup
+startgroup
+set_property package_pin E7 [get_ports {seg[5]}]
+endgroup
+set_property package_pin "" [get_ports [list  {seg[7]}]]
+startgroup
+set_property package_pin D5 [get_ports {seg[6]}]
+endgroup
+startgroup
+set_property package_pin C6 [get_ports {seg[7]}]
+endgroup
+startgroup
+set_property package_pin D8 [get_ports {digit[3]}]
+endgroup
+startgroup
+set_property package_pin E8 [get_ports {digit[2]}]
+endgroup
+startgroup
+set_property package_pin F9 [get_ports {digit[1]}]
+endgroup
+set_property package_pin "" [get_ports [list  {digit[3]}]]
+set_property package_pin "" [get_ports [list  {digit[2]}]]
+set_property package_pin "" [get_ports [list  {digit[1]}]]
+startgroup
+set_property package_pin D8 [get_ports {digit[0]}]
+endgroup
+startgroup
+set_property package_pin E8 [get_ports {digit[1]}]
+endgroup
+startgroup
+set_property package_pin F9 [get_ports {digit[2]}]
+endgroup
+startgroup
+set_property package_pin F10 [get_ports {digit[3]}]
+endgroup
+save_constraints
+exit
+ERROR: [#UNDEF] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+ (See /home/ise/Xilinx_project/computer_8bit/planAhead_pid3278.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Sun Oct  5 07:54:38 2025...
+INFO: [Common 17-83] Releasing license: PlanAhead
