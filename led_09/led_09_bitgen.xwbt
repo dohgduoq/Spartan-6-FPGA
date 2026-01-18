@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/ise/Xilinx_project/led_09/led_09.ncd
+OUTFILE=/home/ise/Xilinx_project/led_09/led_09.bit
+FAMILY=Spartan6
+PART=xc6slx9-3ftg256
+WORKINGDIR=/home/ise/Xilinx_project/led_09
+LICENSE=ISE
+USER_INFO=8416_11442_1478797146_620

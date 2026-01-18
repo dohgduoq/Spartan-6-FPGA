@@ -1,0 +1,56 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Sep 08 08:35:50 2025
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "nut_down" LOCATE = SITE "C3" LEVEL 1;
+COMP "clk" LOCATE = SITE "T8" LEVEL 1;
+COMP "seg<0>" LOCATE = SITE "C7" LEVEL 1;
+COMP "seg<1>" LOCATE = SITE "E6" LEVEL 1;
+COMP "seg<2>" LOCATE = SITE "C5" LEVEL 1;
+COMP "seg<3>" LOCATE = SITE "F7" LEVEL 1;
+COMP "seg<4>" LOCATE = SITE "D6" LEVEL 1;
+COMP "seg<5>" LOCATE = SITE "E7" LEVEL 1;
+COMP "seg<6>" LOCATE = SITE "D5" LEVEL 1;
+COMP "digit<0>" LOCATE = SITE "D8" LEVEL 1;
+COMP "digit<1>" LOCATE = SITE "E8" LEVEL 1;
+COMP "digit<2>" LOCATE = SITE "F9" LEVEL 1;
+COMP "digit<3>" LOCATE = SITE "F10" LEVEL 1;
+COMP "digit<4>" LOCATE = SITE "E10" LEVEL 1;
+COMP "digit<5>" LOCATE = SITE "D9" LEVEL 1;
+COMP "nut_up" LOCATE = SITE "D3" LEVEL 1;
+COMP "reset" LOCATE = SITE "L3" LEVEL 1;
+TIMEGRP clk = BEL "nut_down_sync_0" BEL "nut_down_sync_1" BEL "nut_up_sync_0"
+        BEL "nut_up_sync_1" BEL "pulse_up" BEL "pulse_down" BEL "nut_up_prev"
+        BEL "nut_down_prev" BEL "counter_up_0" BEL "counter_up_1" BEL
+        "counter_up_2" BEL "counter_up_3" BEL "counter_up_4" BEL
+        "counter_up_5" BEL "counter_up_6" BEL "counter_up_7" BEL
+        "counter_up_8" BEL "counter_up_9" BEL "counter_up_10" BEL
+        "counter_up_11" BEL "counter_up_12" BEL "counter_up_13" BEL
+        "counter_up_14" BEL "counter_up_15" BEL "counter_up_16" BEL
+        "counter_up_17" BEL "counter_up_18" BEL "counter_up_19" BEL
+        "counter_down_0" BEL "counter_down_1" BEL "counter_down_2" BEL
+        "counter_down_3" BEL "counter_down_4" BEL "counter_down_5" BEL
+        "counter_down_6" BEL "counter_down_7" BEL "counter_down_8" BEL
+        "counter_down_9" BEL "counter_down_10" BEL "counter_down_11" BEL
+        "counter_down_12" BEL "counter_down_13" BEL "counter_down_14" BEL
+        "counter_down_15" BEL "counter_down_16" BEL "counter_down_17" BEL
+        "counter_down_18" BEL "counter_down_19" BEL "count_0" BEL "count_1"
+        BEL "count_2" BEL "count_3" BEL "ref_counter_0" BEL "ref_counter_1"
+        BEL "ref_counter_2" BEL "ref_counter_3" BEL "ref_counter_4" BEL
+        "ref_counter_5" BEL "ref_counter_6" BEL "ref_counter_7" BEL
+        "ref_counter_8" BEL "ref_counter_9" BEL "ref_counter_10" BEL
+        "ref_counter_11" BEL "ref_counter_12" BEL "ref_counter_13" BEL
+        "ref_counter_14" BEL "ref_counter_15" BEL "ref_counter_16" BEL
+        "ref_counter_17" BEL "ref_counter_18" BEL "ref_counter_19" BEL
+        "cur_digit_0" BEL "cur_digit_1" BEL "cur_digit_2" BEL "nut_up_sta" BEL
+        "nut_down_sta" BEL "clk_BUFGP/BUFG";
+TS_clk = PERIOD TIMEGRP "clk" 20 ns HIGH 50%;
+PIN reset_pins<0> = BEL "reset" PINNAME PAD;
+PIN nut_up_pins<0> = BEL "nut_up" PINNAME PAD;
+PIN nut_down_pins<0> = BEL "nut_down" PINNAME PAD;
+PIN "reset_pins<0>" TIG;
+PIN "nut_up_pins<0>" TIG;
+PIN "nut_down_pins<0>" TIG;
+SCHEMATIC END;
+

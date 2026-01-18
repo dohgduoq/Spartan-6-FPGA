@@ -1,0 +1,26 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "digit[0]" LOC = D8;
+NET "digit[1]" LOC = E8;
+NET "digit[2]" LOC = F9;
+NET "digit[3]" LOC = F10;
+NET "digit[4]" LOC = E10;
+NET "digit[5]" LOC = D9;
+NET "seg[0]" LOC = C7;
+NET "seg[1]" LOC = E6;
+NET "seg[2]" LOC = C5;
+NET "seg[3]" LOC = F7;
+NET "seg[4]" LOC = D6;
+NET "seg[5]" LOC = E7;
+NET "seg[6]" LOC = D5;
+NET "nut_up" LOC = D3;
+NET "nut_down" LOC = C3;
+NET "reset" LOC = L3;
+NET "clk" LOC = T8;
+
+TIMESPEC TS_clk = PERIOD "clk" 20 ns HIGH 50%;
+NET "reset" TIG;
+NET "nut_up" TIG;
+NET "nut_down" TIG;
+NET "clk" TNM_NET = clk;

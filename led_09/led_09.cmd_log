@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "/home/ise/Xilinx_project/led_09/led_09.xst" -ofn "/home/ise/Xilinx_project/led_09/led_09.syr" 
+xst -intstyle ise -ifn "/home/ise/Xilinx_project/led_09/led_09.xst" -ofn "/home/ise/Xilinx_project/led_09/led_09.syr" 
+xst -intstyle ise -ifn "/home/ise/Xilinx_project/led_09/led_09.xst" -ofn "/home/ise/Xilinx_project/led_09/led_09.syr" 
+xst -intstyle ise -ifn "/home/ise/Xilinx_project/led_09/led_09.xst" -ofn "/home/ise/Xilinx_project/led_09/led_09.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc led_09.ucf -p xc6slx9-ftg256-3 led_09.ngc led_09.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc led_09.ucf -p xc6slx9-ftg256-3 led_09.ngc led_09.ngd  
+map -intstyle ise -p xc6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_09_map.ncd led_09.ngd led_09.pcf 
+par -w -intstyle ise -ol high -mt off led_09_map.ncd led_09.ncd led_09.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml led_09.twx led_09.ncd -o led_09.twr led_09.pcf -ucf led_09.ucf 
+bitgen -intstyle ise -f led_09.ut led_09.ncd 
+bitgen -intstyle ise -f led_09.ut led_09.ncd 
+netgen -intstyle ise -s 3  -pcf led_09.pcf -sdf_anno true -sdf_path "netgen/map" -insert_glbl true -w -dir netgen/map -ofmt verilog -sim led_09_map.ncd led_09_map.v 
