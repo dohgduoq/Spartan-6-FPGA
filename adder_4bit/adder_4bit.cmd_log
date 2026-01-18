@@ -1,0 +1,25 @@
+xst -intstyle ise -ifn "/home/ise/Xilinx_project/adder_4bit/adder_4bit.xst" -ofn "/home/ise/Xilinx_project/adder_4bit/adder_4bit.syr" 
+xst -intstyle ise -ifn "/home/ise/Xilinx_project/adder_4bit/adder_4bit.xst" -ofn "/home/ise/Xilinx_project/adder_4bit/adder_4bit.syr" 
+xst -intstyle ise -ifn "/home/ise/Xilinx_project/adder_4bit/adder_4bit.xst" -ofn "/home/ise/Xilinx_project/adder_4bit/adder_4bit.syr" 
+xst -intstyle ise -ifn "/home/ise/Xilinx_project/adder_4bit/adder_4bit.xst" -ofn "/home/ise/Xilinx_project/adder_4bit/adder_4bit.syr" 
+xst -intstyle ise -ifn "/home/ise/Xilinx_project/adder_4bit/adder_4bit.xst" -ofn "/home/ise/Xilinx_project/adder_4bit/adder_4bit.syr" 
+xst -intstyle ise -ifn "/home/ise/Xilinx_project/adder_4bit/adder_4bit.xst" -ofn "/home/ise/Xilinx_project/adder_4bit/adder_4bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc adder_4bit.ucf -p xc6slx9-ftg256-3 adder_4bit.ngc adder_4bit.ngd  
+map -intstyle ise -p xc6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o adder_4bit_map.ncd adder_4bit.ngd adder_4bit.pcf 
+par -w -intstyle ise -ol high -mt off adder_4bit_map.ncd adder_4bit.ncd adder_4bit.pcf 
+bitgen -intstyle ise -f adder_4bit.ut adder_4bit.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc adder_4bit.ucf -p xc6slx9-ftg256-3 adder_4bit.ngc adder_4bit.ngd  
+map -intstyle ise -p xc6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o adder_4bit_map.ncd adder_4bit.ngd adder_4bit.pcf 
+par -w -intstyle ise -ol high -mt off adder_4bit_map.ncd adder_4bit.ncd adder_4bit.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml adder_4bit.twx adder_4bit.ncd -o adder_4bit.twr adder_4bit.pcf -ucf adder_4bit.ucf 
+bitgen -intstyle ise -f adder_4bit.ut adder_4bit.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc adder_4bit.ucf -p xc6slx9-ftg256-3 adder_4bit.ngc adder_4bit.ngd  
+map -intstyle ise -p xc6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o adder_4bit_map.ncd adder_4bit.ngd adder_4bit.pcf 
+par -w -intstyle ise -ol high -mt off adder_4bit_map.ncd adder_4bit.ncd adder_4bit.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml adder_4bit.twx adder_4bit.ncd -o adder_4bit.twr adder_4bit.pcf -ucf adder_4bit.ucf 
+bitgen -intstyle ise -f adder_4bit.ut adder_4bit.ncd 
+xst -intstyle ise -ifn "/home/ise/Xilinx_project/adder_4bit/adder_4bit.xst" -ofn "/home/ise/Xilinx_project/adder_4bit/adder_4bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc adder_4bit.ucf -p xc6slx9-ftg256-3 adder_4bit.ngc adder_4bit.ngd  
+map -intstyle ise -p xc6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o adder_4bit_map.ncd adder_4bit.ngd adder_4bit.pcf 
+par -w -intstyle ise -ol high -mt off adder_4bit_map.ncd adder_4bit.ncd adder_4bit.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml adder_4bit.twx adder_4bit.ncd -o adder_4bit.twr adder_4bit.pcf -ucf adder_4bit.ucf 

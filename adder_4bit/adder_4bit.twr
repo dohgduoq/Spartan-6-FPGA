@@ -1,0 +1,124 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml adder_4bit.twx adder_4bit.ncd -o adder_4bit.twr
+adder_4bit.pcf -ucf adder_4bit.ucf
+
+Design file:              adder_4bit.ncd
+Physical constraint file: adder_4bit.pcf
+Device,package,speed:     xc6slx9,ftg256,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+A<0>           |led_cout       |   10.803|
+A<0>           |led_sum<0>     |    7.970|
+A<0>           |led_sum<1>     |    7.938|
+A<0>           |led_sum<2>     |    8.322|
+A<0>           |led_sum<3>     |    8.290|
+A<0>           |led_sum<4>     |    8.031|
+A<0>           |led_sum<5>     |    8.643|
+A<0>           |led_sum<6>     |    8.571|
+A<1>           |led_cout       |   10.767|
+A<1>           |led_sum<0>     |    7.934|
+A<1>           |led_sum<1>     |    7.814|
+A<1>           |led_sum<2>     |    8.228|
+A<1>           |led_sum<3>     |    8.254|
+A<1>           |led_sum<4>     |    7.995|
+A<1>           |led_sum<5>     |    8.607|
+A<1>           |led_sum<6>     |    8.461|
+A<2>           |led_cout       |   10.046|
+A<2>           |led_sum<0>     |    8.033|
+A<2>           |led_sum<1>     |    8.018|
+A<2>           |led_sum<2>     |    8.402|
+A<2>           |led_sum<3>     |    7.941|
+A<2>           |led_sum<4>     |    7.763|
+A<2>           |led_sum<5>     |    8.492|
+A<2>           |led_sum<6>     |    8.651|
+A<3>           |led_cout       |    9.658|
+A<3>           |led_sum<0>     |    6.871|
+A<3>           |led_sum<1>     |    7.134|
+A<3>           |led_sum<2>     |    7.500|
+A<3>           |led_sum<3>     |    7.150|
+A<3>           |led_sum<4>     |    7.194|
+A<3>           |led_sum<5>     |    7.171|
+A<3>           |led_sum<6>     |    7.312|
+B<0>           |led_cout       |   10.539|
+B<0>           |led_sum<0>     |    7.725|
+B<0>           |led_sum<1>     |    7.710|
+B<0>           |led_sum<2>     |    8.094|
+B<0>           |led_sum<3>     |    8.026|
+B<0>           |led_sum<4>     |    7.767|
+B<0>           |led_sum<5>     |    8.379|
+B<0>           |led_sum<6>     |    8.343|
+B<1>           |led_cout       |   10.502|
+B<1>           |led_sum<0>     |    7.669|
+B<1>           |led_sum<1>     |    7.549|
+B<1>           |led_sum<2>     |    7.963|
+B<1>           |led_sum<3>     |    7.989|
+B<1>           |led_sum<4>     |    7.730|
+B<1>           |led_sum<5>     |    8.342|
+B<1>           |led_sum<6>     |    8.196|
+B<2>           |led_cout       |   10.293|
+B<2>           |led_sum<0>     |    7.898|
+B<2>           |led_sum<1>     |    7.883|
+B<2>           |led_sum<2>     |    8.267|
+B<2>           |led_sum<3>     |    7.806|
+B<2>           |led_sum<4>     |    7.628|
+B<2>           |led_sum<5>     |    8.357|
+B<2>           |led_sum<6>     |    8.516|
+B<3>           |led_cout       |   10.230|
+B<3>           |led_sum<0>     |    7.210|
+B<3>           |led_sum<1>     |    7.473|
+B<3>           |led_sum<2>     |    7.839|
+B<3>           |led_sum<3>     |    7.489|
+B<3>           |led_sum<4>     |    7.533|
+B<3>           |led_sum<5>     |    7.510|
+B<3>           |led_sum<6>     |    7.651|
+Cin            |led_cout       |   10.448|
+Cin            |led_sum<0>     |    7.615|
+Cin            |led_sum<1>     |    7.495|
+Cin            |led_sum<2>     |    7.909|
+Cin            |led_sum<3>     |    7.935|
+Cin            |led_sum<4>     |    7.676|
+Cin            |led_sum<5>     |    8.288|
+Cin            |led_sum<6>     |    8.142|
+---------------+---------------+---------+
+
+
+Analysis completed Sun Sep  7 07:01:15 2025 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 381 MB
+
+
+
