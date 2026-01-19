@@ -1,0 +1,14 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sun Sep 07 08:53:07 2025
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "do_led" LOCATE = SITE "P4" LEVEL 1;
+COMP "clk" LOCATE = SITE "T8" LEVEL 1;
+COMP "led_nut" LOCATE = SITE "M6" LEVEL 1;
+COMP "xanh_led" LOCATE = SITE "P5" LEVEL 1;
+COMP "reset" LOCATE = SITE "L3" LEVEL 1;
+COMP "nut" LOCATE = SITE "C3" LEVEL 1;
+COMP "vang_led" LOCATE = SITE "N5" LEVEL 1;
+SCHEMATIC END;
+

@@ -1,0 +1,12 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "do_led" LOC = P4;
+NET "vang_led" LOC = N5;
+NET "xanh_led" LOC = P5;
+NET "led_nut" LOC = M6;
+NET "nut" LOC = C3;
+NET "reset" LOC = L3;
+NET "clk" LOC = T8;
+
+TIMESPEC "TS_clk" = PERIOD "clk" 20 ns HIGH 50%;

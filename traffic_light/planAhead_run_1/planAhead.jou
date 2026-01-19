@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Sun Sep  7 08:42:06 2025
+# Process ID: 3894
+# Log file: /home/ise/Xilinx_project/traffic_light/planAhead_run_1/planAhead.log
+# Journal file: /home/ise/Xilinx_project/traffic_light/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /home/ise/Xilinx_project/traffic_light/pa.fromNetlist.tcl
+startgroup
+set_property package_pin P4 [get_ports do_led]
+endgroup
+startgroup
+set_property package_pin N5 [get_ports vang_led]
+endgroup
+startgroup
+set_property package_pin P5 [get_ports xanh_led]
+endgroup
+startgroup
+set_property package_pin M6 [get_ports led_nut]
+endgroup
+startgroup
+set_property package_pin C3 [get_ports nut]
+endgroup
+startgroup
+set_property package_pin L3 [get_ports reset]
+endgroup
+startgroup
+set_property package_pin T8 [get_ports clk]
+endgroup
+save_constraints
