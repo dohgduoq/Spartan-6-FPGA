@@ -1,0 +1,16 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/ise/Xilinx_project/ram_16x8/ram_16x8_isim_beh.exe" -prj "/home/ise/Xilinx_project/ram_16x8/ram_16x8_beh.prj" "work.ram_16x8" "work.glbl" 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Analyzing Verilog file "/home/ise/Xilinx_project/ram_16x8/ram_16x8.v" into library work
+Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 94924 KB
+Fuse CPU Usage: 1650 ms
+Compiling module ram_16x8
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+ERROR:Simulator:904 - Unable to remove previous simulation file isim/ram_16x8_isim_beh.exe.sim/ram_16x8_isim_beh.exe. Please check if you have another instance of this simulation running on your system, terminate it and then recompile your design. System Error Message: boost::filesystem::remove: Text file busy: "isim/ram_16x8_isim_beh.exe.sim/ram_16x8_isim_beh.exe"
+ERROR:Simulator:861 - Failed to link the design

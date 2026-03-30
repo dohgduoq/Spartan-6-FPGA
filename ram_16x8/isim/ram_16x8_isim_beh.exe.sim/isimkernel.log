@@ -1,0 +1,28 @@
+Command line:
+   ram_16x8_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  60640
+
+Wed Sep 10 16:14:37 2025
+
+
+ Elaboration Time: 0.05 sec
+
+ Current Memory Usage: 198.578 Meg
+
+ Total Signals          : 19
+ Total Nets             : 29
+ Total Signal Drivers   : 6
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 9
+ Total Traceable Variables  : 23
+ Total Scalar Nets and Variables : 341
+
+ Total Simulation Time: 0.07 sec
+
+ Current Memory Usage: 276.177 Meg
+
+Wed Sep 10 16:19:39 2025
+
