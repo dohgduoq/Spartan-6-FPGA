@@ -1,0 +1,6 @@
+verilog work "ov5640_capture.v"
+verilog work "lcd_driver.v"
+verilog work "i2c_config.v"
+verilog work "frame_buffer.v"
+verilog work "clk_gen.v"
+verilog work "top_module.v"

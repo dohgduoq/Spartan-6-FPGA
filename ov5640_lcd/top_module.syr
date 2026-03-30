@@ -1,0 +1,178 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> 
+Reading design: top_module.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top_module.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top_module"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-ftg256
+
+---- Source Options
+Top Module Name                    : top_module
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/ise/Xilinx_project/ov5640_lcd/ov5640_capture.v" into library work
+Parsing module <ov5640_capture>.
+Analyzing Verilog file "/home/ise/Xilinx_project/ov5640_lcd/lcd_driver.v" into library work
+Parsing module <lcd_driver>.
+Analyzing Verilog file "/home/ise/Xilinx_project/ov5640_lcd/i2c_config.v" into library work
+Parsing module <i2c_config>.
+Analyzing Verilog file "/home/ise/Xilinx_project/ov5640_lcd/frame_buffer.v" into library work
+Parsing module <frame_buffer>.
+Analyzing Verilog file "/home/ise/Xilinx_project/ov5640_lcd/clk_gen.v" into library work
+Parsing module <clk_gen>.
+Analyzing Verilog file "/home/ise/Xilinx_project/ov5640_lcd/top_module.v" into library work
+Parsing module <top_module>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <top_module>.
+
+Elaborating module <clk_gen>.
+
+Elaborating module <PLL_BASE(BANDWIDTH="OPTIMIZED",CLKFBOUT_MULT=12,CLKFBOUT_PHASE=0.0,CLKIN_PERIOD=20.0,CLKOUT0_DIVIDE=25,CLKOUT0_PHASE=0.0,CLKOUT0_DUTY_CYCLE=0.5,CLKOUT1_DIVIDE=18,CLKOUT1_PHASE=0.0,CLKOUT1_DUTY_CYCLE=0.5,CLKOUT2_DIVIDE=6,CLKOUT2_PHASE=0.0,CLKOUT2_DUTY_CYCLE=0.5,COMPENSATION="SYSTEM_SYNCHRONOUS",DIVCLK_DIVIDE=1,REF_JITTER=0.1)>.
+
+Elaborating module <i2c_config>.
+WARNING:HDLCompiler:413 - "/home/ise/Xilinx_project/ov5640_lcd/i2c_config.v" Line 67: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/Xilinx_project/ov5640_lcd/i2c_config.v" Line 82: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/Xilinx_project/ov5640_lcd/i2c_config.v" Line 87: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/Xilinx_project/ov5640_lcd/i2c_config.v" Line 96: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/Xilinx_project/ov5640_lcd/i2c_config.v" Line 103: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/Xilinx_project/ov5640_lcd/i2c_config.v" Line 106: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/Xilinx_project/ov5640_lcd/i2c_config.v" Line 112: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/Xilinx_project/ov5640_lcd/i2c_config.v" Line 113: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/Xilinx_project/ov5640_lcd/i2c_config.v" Line 114: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/Xilinx_project/ov5640_lcd/i2c_config.v" Line 123: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/Xilinx_project/ov5640_lcd/i2c_config.v" Line 126: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/Xilinx_project/ov5640_lcd/i2c_config.v" Line 129: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/Xilinx_project/ov5640_lcd/i2c_config.v" Line 199: Result of 21-bit expression is truncated to fit in 20-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/Xilinx_project/ov5640_lcd/i2c_config.v" Line 210: Result of 6-bit expression is truncated to fit in 5-bit target.
+ERROR:HDLCompiler:1401 - "/home/ise/Xilinx_project/ov5640_lcd/i2c_config.v" Line 53: Signal data_idx[1] in unit i2c_config is connected to following multiple drivers:
+Driver 0: output signal data_idx[1] of instance Flip-flop (data_idx).
+Driver 1: output signal data_idx[1] of instance Flip-flop (_i000110).
+Driver 0: output signal data_idx[0] of instance Flip-flop (data_idx).
+Driver 1: output signal data_idx[0] of instance Flip-flop (_i000110).
+Module i2c_config remains a blackbox, due to errors in its contents
+WARNING:HDLCompiler:1499 - "/home/ise/Xilinx_project/ov5640_lcd/i2c_config.v" Line 3: Empty module <i2c_config> remains a black box.
+
+Elaborating module <ov5640_capture>.
+WARNING:HDLCompiler:413 - "/home/ise/Xilinx_project/ov5640_lcd/ov5640_capture.v" Line 55: Result of 12-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/Xilinx_project/ov5640_lcd/ov5640_capture.v" Line 59: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/Xilinx_project/ov5640_lcd/ov5640_capture.v" Line 82: Result of 20-bit expression is truncated to fit in 17-bit target.
+
+Elaborating module <frame_buffer>.
+
+Elaborating module <lcd_driver>.
+WARNING:HDLCompiler:413 - "/home/ise/Xilinx_project/ov5640_lcd/lcd_driver.v" Line 42: Result of 12-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/Xilinx_project/ov5640_lcd/lcd_driver.v" Line 53: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/Xilinx_project/ov5640_lcd/lcd_driver.v" Line 63: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/Xilinx_project/ov5640_lcd/lcd_driver.v" Line 64: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/Xilinx_project/ov5640_lcd/lcd_driver.v" Line 87: Result of 32-bit expression is truncated to fit in 17-bit target.
+--> 
+
+
+Total memory usage is 412152 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :   23 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
