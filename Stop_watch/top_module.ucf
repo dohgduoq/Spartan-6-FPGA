@@ -1,0 +1,59 @@
+
+// tinh hieu led 
+NET "dig[0]" LOC = D8;
+NET "dig[1]" LOC = E8;
+NET "dig[2]" LOC = F9;
+NET "dig[3]" LOC = F10;
+NET "dig[4]" LOC = E10;
+NET "dig[5]" LOC = D9;
+
+// tinh hieu 7 thanh
+NET "seg[7]" LOC = C6;
+NET "seg[6]" LOC = D5;
+NET "seg[5]" LOC = E7;
+NET "seg[4]" LOC = D6;
+NET "seg[3]" LOC = F7;
+NET "seg[2]" LOC = C5;
+NET "seg[1]" LOC = E6;
+NET "seg[0]" LOC = C7;
+
+
+NET "seg[0]" IOSTANDARD = LVCMOS25;
+NET "seg[1]" IOSTANDARD = LVCMOS25;
+NET "seg[2]" IOSTANDARD = LVCMOS25;
+NET "seg[3]" IOSTANDARD = LVCMOS25;
+NET "seg[4]" IOSTANDARD = LVCMOS25;
+NET "seg[5]" IOSTANDARD = LVCMOS25;
+NET "seg[6]" IOSTANDARD = LVCMOS25;
+NET "seg[7]" IOSTANDARD = LVCMOS25;
+
+NET "dig[5]" IOSTANDARD = LVCMOS25;
+NET "dig[4]" IOSTANDARD = LVCMOS25;
+NET "dig[3]" IOSTANDARD = LVCMOS25;
+NET "dig[2]" IOSTANDARD = LVCMOS25;
+NET "dig[1]" IOSTANDARD = LVCMOS25;
+NET "dig[0]" IOSTANDARD = LVCMOS25;
+
+NET "buzzer" IOSTANDARD = LVCMOS33;
+NET "clk" IOSTANDARD = LVCMOS33;
+NET "lap_n" IOSTANDARD = LVCMOS33;
+NET "rst_n" IOSTANDARD = LVCMOS33;
+NET "start_n" IOSTANDARD = LVCMOS33;
+NET "stop_n" IOSTANDARD = LVCMOS33;
+
+// nut bam + buzzer
+NET "buzzer" LOC = J11;
+NET "clk" LOC = T8;
+NET "rst_n" LOC = L3;
+NET "start_n" LOC = C3;
+NET "stop_n" LOC = D3;
+NET "lap_n" LOC = E3;
+
+// pullup tin hieu
+NET "lap_n" PULLUP;
+NET "start_n" PULLUP;
+NET "rst_n" PULLUP;
+NET "stop_n" PULLUP;
+
+
+
