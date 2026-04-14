@@ -7,7 +7,7 @@
 | Speed | -3 |
 | Synthesis Tool | XST |
 | Simulator | ISim |
-| Preferred Language | VHDL |
+| Preferred Language | Verilog |
 
 ## 🔧 Development Environment
 
