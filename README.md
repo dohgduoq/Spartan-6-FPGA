@@ -1,14 +1,13 @@
 # Spartan-6-FPGA
-Basic tutorial related to the Spartan 6 AX309 board. Implementation using ISE Design Suit
-
-- `led_09/`  
-  A simple LED project used to verify:
-  - Pin constraints
-  - Clock configuration
-  - Basic Verilog/VHDL design flow
-  - FPGA programming via JTAG
-
----
+| Key | Value |
+|-----|-------|
+| Family | Spartan6 |
+| Device | XC6SLX45 |
+| Package | FGG676 |
+| Speed | -3 |
+| Synthesis Tool | XST |
+| Simulator | ISim |
+| Preferred Language | VHDL |
 
 ## 🔧 Development Environment
 
