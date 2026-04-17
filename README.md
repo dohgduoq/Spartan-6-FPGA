@@ -1,10 +1,10 @@
 # Spartan-6-FPGA
 | Key | Value |
 |-----|-------|
-| Family | Spartan6 |
-| Device | XC6SLX45 |
-| Package | FGG676 |
-| Speed | -3 |
+| Family | Spartan 6 |
+| Device | XC6SLX9 |
+| Package | FTG256C |
+| Speed | -2 |
 | Synthesis Tool | XST |
 | Simulator | ISim |
 | Preferred Language | Verilog |
